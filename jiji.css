@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{/*proprietés css du corps de la page*/
+    background-image:url(fond.jpg);/*on insere une image jiji de fond*/
+    background-position:center;/*on centre l'image dde fond sinon on aura plusieurs petites img*/
+    background-size:cover;/*pour une image de fond unique couvrant tout l'ecransinon on aura +sieurs petites img si je me rappel*/
+
+}
+.jiji{
+    height:100%;
+    width:100%;
+}
+.jiji-form{/*css de la boite jiji form*/
+    width:430px ;/*largeur de la boite de 380 pixels */
+    height:480px;/*hauteur de la boite */
+    position: relative;
+    margin:6% auto;/*marge exterieur(c'est la distance entre le bord de la fenetre et notre boite ) de 6% automatique de la boite jiji*/
+    background: transparent; /*couleur leur blanche fond de la boite */
+    padding:5px;/*marge interieure(c'est la distance entre le bord de la boite et son contenu) de 15 pixels*/
+    overflow: hidden;
+}
+.jiji-bouton{
+    width:270px ;/*largeur de la boite */
+    margin:6% auto;/*marge exterieur(c'est la distance entre le bord de la boite jiji form et la boite bouton jiji...comme c'est imbriqué ) de 6% automatique du boutton jiji*/
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;/*on mets une ombre maronne sur notre bouton*/
+    border-radius: 30px;/*on arrondi les bords de notre boite bouton,comme ca sort souvent pointu par defaut la*/
+    background-color:transparent;
+}
+.jiji-btn1{/*css du bouton sidentifier*/
+    padding: 10px 30px;
+    cursor:pointer;
+    background:transparent;/*faire que le bouton sidentifier devienne transparent*/
+    border:0;/*ici c pour enlever les bords du bouton*/
+    outline:none;/*pour faire k les 2 boutons soient sur la mem ligne*/
+    position:relative;
+    border-radius:30px;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+.jiji-btn2{/*css du bouton senregistrer*/
+    padding: 10px 30px;
+    cursor:pointer;
+    background:transparent;/*faire que le bouton senregistrer devienne transparent*/
+    border:0;/*ici c pour enlever les bords du boutons*/
+    outline:none;/*pour faire k les 2 boutons soient sur la mem ligne*/
+    position:relative;
+    border-radius:30px;
+    transition-property: background-color;
+}
+
+.jiji-btn1:hover, .jiji-btn2:hover{/*kan la souris passe desss le bouton change de couleur*/
+    background: linear-gradient(to right,#ff105f,#ffad06);
+}
+
+.social{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social img{
+    width: 30px;
+    margin: 0 12px;
+    margin: 0 0 20px 0 #7f7f7f;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.form-jiji{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition:.5s
+}
+.input-field{
+    width: 100%;
+    padding:10px;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom:1px solid #999;
+    outline:none;
+    background: transparent;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border:0;
+    outline: none;
+    border-radius:30px;
+}
+span{
+    color:#777;
+    font-size:12px;
+    bottom: 68px;
+    position:absolute   
+
+}
+#login{
+    left:50px;
+}
+#register{
+    left: 450px ;
+}

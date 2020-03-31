@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="jiji.css">
+    <title>Dagnrin_Jiji</title>
+    
+</head>
+
+<body>
+    <div class="jiji"><!--une premiere boite(tout les elements div sont des boites)-->
+        <div class="jiji-form"><!--une 2em boite contenant le formulaire-->
+            <div class="jiji-bouton"><!--une boite contenant un bouton du formulaire-->
+                <button type="button" class="jiji-btn1" onclick="login()">S'identifier</button><!--une boite contenant un bouton du S'identifier-->
+                <button type="button" class="jiji-btn2" onclick="register()">S'enregistrer</button><!--une boite contenant un bouton du S'enregistrer-->
+            </div>
+            <div class="social">
+                <img src="fb.png">
+                <img src="tw.png">
+                <img src="gp.png">
+            </div>
+            <form id="login" class="form-jiji">
+                <input type="text" class="input-field" placeholder="Identifiant" required>
+                <input type="password" class="input-field" placeholder="Mot De Passe" required>
+                <input type="checkbox" class="check-box"><span>Se souvenir du Mot de Passe</span>
+                <button type="submit" class="submit-btn">S'identifier</button>
+            </form>
+            <form id="register" class="form-jiji">
+                <input type="text" class="input-field" placeholder="Identifiant" required>
+                <input type="email" class="input-field" placeholder="E-mail" required>
+                <input type="password" class="input-field" placeholder="Mot De Passe" required>
+                <input type="checkbox" class="check-box"><span>agrer aux termes & conditions</span>
+                <button type="submit" class="submit-btn">S'inscrire</button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+        }
+
+    </script>
+</body>
+
+
+</html>
